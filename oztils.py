@@ -29,3 +29,37 @@ def isPalindrome(check):
 #turns list into string
 def listToString(listInp):
 	return ''.join(listInp)
+
+def cache(func):
+    cache = {}
+
+    def wrapper(*args):
+        if args in cache:
+            return cache[args]
+        else:
+            cache[args] = func(*args)
+            return cache[args]
+    
+    return wrapper
+
+def ns_per_sec(num):
+    return num * 10 ** 9 # 10 to the 9 is 1 billion
+
+def replace_multiple(text, table):
+    """replace using a dictionary
+    Args:
+        text ([string]): [text to be replaced]
+        table ([dictionary]): [dictionary with keys as the target and values as what to replace targets with]
+    """
+
+    for key in table.keys():
+        text = text.replace(key, table[key])
+
+    return text
+
+def slowprint(text, delay):
+    from time import sleep
+    for char in text:
+        print(char, end="",flush=True)
+        sleep(delay)
+    print()
