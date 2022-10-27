@@ -63,3 +63,7 @@ def slowprint(text, delay):
         print(char, end="",flush=True)
         sleep(delay)
     print()
+
+def remove(strIn, toRemove):
+	for char in toRemove: strIn=strIn.replace(char,'')
+	return strIn
