@@ -1,3 +1,5 @@
+import os
+
 #range(3) returns [0,1,2], where nonIndexedRange(3) returns [1,2,3]
 def nonIndexedRange(rangeInp):
 	lst = list(range(int(rangeInp)))
@@ -67,3 +69,18 @@ def slowprint(text, delay):
 def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
+
+def fileAppend(file,toWrite):
+	localOpen = open(file, "a")
+	localOpen.write(str(toWrite))
+	localOpen.close()
+def fileDestroy(file):
+	localOpen = open(file, "w")
+	localOpen.write("")
+	localOpen.close()
+def fileDelete(file):
+	import os
+	os.remove(file)
+def fileRename(file,toRename):
+	import os
+	os.rename(file,toRename)
