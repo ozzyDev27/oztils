@@ -84,3 +84,5 @@ def fileDelete(file):
 def fileRename(file,toRename):
 	import os
 	os.rename(file,toRename)
+def last(listName):
+	return listName[len(listName)-1]
