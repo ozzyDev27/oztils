@@ -115,3 +115,7 @@ def simplify(a,b):
 def invBool(bo):
 	if bo==True: return False
 	else: return True
+def isPrime(n):
+		for i in range(2,round(n/2)+2):
+			if (n%i) == 0:return False
+		return True
