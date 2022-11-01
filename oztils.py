@@ -100,3 +100,15 @@ def isRound(num):
 def intput(ina):
 	try: return int(input(ina))
 	except: return False
+def simplify(a,b):
+	factsA=[]
+	for checkA in range(1,round(a/2+1)):
+		if a/checkA==round(a/checkA):factsA.append(checkA)
+	facts=[]
+	factsA.append(a)
+	factsA=factsA[::-1]
+	for _ in factsA:
+		if b/_==round(b/_):
+			facts.append(_)
+			break
+	return [int(a/facts[len(facts)-1]),int(b/facts[len(facts)-1])]
