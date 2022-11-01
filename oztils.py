@@ -97,3 +97,6 @@ def isRound(num):
 		return True
 	else:
 		return False
+def intput(ina):
+	try: return int(input(ina))
+	except: return False
