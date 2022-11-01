@@ -92,3 +92,8 @@ def getLarger(numA,numB):
 def getSmaller(numA, numB):
 	if numA<numB:return numA
 	else: return numB
+def isRound(num):
+	if round(num)==num:
+		return True
+	else:
+		return False
