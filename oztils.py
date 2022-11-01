@@ -44,9 +44,6 @@ def cache(func):
     
     return wrapper
 
-def ns_per_sec(num):
-    return num * 10 ** 9 # 10 to the 9 is 1 billion
-
 
 def slowprint(text, delay):
     from time import sleep
