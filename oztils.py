@@ -86,12 +86,6 @@ def fileRename(file,toRename):
 	os.rename(file,toRename)
 def last(listName):
 	return listName[len(listName)-1]
-def getLarger(numA,numB):
-	if numA>numB:return numA
-	else: return numB
-def getSmaller(numA, numB):
-	if numA<numB:return numA
-	else: return numB
 def isRound(num):
 	if round(num)==num:
 		return True
