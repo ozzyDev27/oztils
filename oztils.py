@@ -1,4 +1,3 @@
-import os
 def nonIndexedRange(rangeInp):
 	lst = list(range(int(rangeInp)))
 	for i in lst: lst[i]+=1
@@ -29,10 +28,12 @@ def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
 def fileAppend(file,toWrite):
+	import os
 	localOpen = open(file, "a")
 	localOpen.write(str(toWrite))
 	localOpen.close()
 def fileDestroy(file):
+	import os
 	localOpen = open(file, "w")
 	localOpen.write("")
 	localOpen.close()
