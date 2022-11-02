@@ -32,7 +32,7 @@ def fileAppend(file,toWrite):
 	localOpen = open(file, "a")
 	localOpen.write(str(toWrite))
 	localOpen.close()
-def fileDestroy(file):
+def fileErase(file):
 	import os
 	localOpen = open(file, "w")
 	localOpen.write("")
