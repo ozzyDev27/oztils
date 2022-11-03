@@ -70,6 +70,7 @@ def isPrime(n):
 	for i in range(2,round(n/2)+2):
 		if (n%i) == 0:return False
 	return True
-def UNITTESTFORoztils():
-	if list(nonIndexedRange(7))[4]!=4: print("nonIndexedRange")
-	if invert("Hello, world!")!="!dlrow ,olleH": print("invert")
+def deleteAllOf(ls,target):
+	while target in ls:
+		ls.pop(ls.index(target))
+	return ls
