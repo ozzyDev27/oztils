@@ -74,3 +74,10 @@ def deleteAllOf(ls,target):
 	while target in ls:
 		ls.pop(ls.index(target))
 	return ls
+def abs(n):
+	if n<0: 
+		try: return int(n*-1)
+		except: return n*-1
+	else: 
+		try:return int(n)
+		except: return n
