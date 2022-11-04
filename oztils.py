@@ -81,3 +81,9 @@ def abs(n):
 	else: 
 		try:return int(n)
 		except: return n
+def factorial(k):
+	s=k
+	for i in range(k-1):
+		s-=1
+		k*=s
+	return k
