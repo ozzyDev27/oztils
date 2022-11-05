@@ -87,3 +87,10 @@ def factorial(k):
 		s-=1
 		k*=s
 	return k
+def bound(num,maxn,minn):
+	if num>maxn:
+		return maxn
+	elif num<minn:
+		return minn
+	else:
+		return num
