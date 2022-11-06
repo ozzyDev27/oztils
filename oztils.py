@@ -81,4 +81,4 @@ def factorial(k):
 		s-=1
 		k*=s
 	return k
-def bound(num,maxn,minn):sorted((minval, value, maxval))[1]
+def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
