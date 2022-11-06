@@ -42,8 +42,6 @@ def fileDelete(file):
 def fileRename(file,toRename):
 	import os
 	os.rename(file,toRename)
-def last(listName):
-	return listName[len(listName)-1]
 def isRound(num):
 	if round(num)==num:return True
 	else:return False
