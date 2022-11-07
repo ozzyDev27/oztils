@@ -82,3 +82,10 @@ def factorial(k):
 		k*=s
 	return k
 def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
+def getDifference(a,b):
+	if a-b<0: 
+		try: return int((a-b)*-1)
+		except: return (a-b)*-1
+	else: 
+		try:return int(a-b)
+		except: return a-b
