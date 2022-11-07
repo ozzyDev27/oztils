@@ -36,3 +36,6 @@ Example: fileAppend("hello.txt","Hello, world!") adds "Hello, world!" to the end
 ### fileErase
 fileErase does not delete the file, it instead erases everything within it. It takes one argument, the file name.
 Example: fileErase("hello.txt") would remove everyting within "hello.txt"
+### fileDelete
+fileDelete does exactly what it says on the tin - deletes the file! It takes one argument, the file name!
+Example: fileDelete("hello.txt") would simply delete "hello.txt"
