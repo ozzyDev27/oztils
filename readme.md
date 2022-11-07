@@ -59,3 +59,6 @@ Example: deleteAllOf(["hello","hi","hey","hi","how are you"],"hi") returns ["hel
 ### abs
 abs takes one input - a number (int, float, any number.) and returns the absolute value!
 Example: abs(-65.3) returns 65.3!
+### factorial
+factorial takes one input - an integer. It returns the factorial of that number!
+Example: factorial(5) returns 120, because 5 factorial is 120.
