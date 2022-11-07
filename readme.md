@@ -22,3 +22,7 @@ Example: reverseList([1,5,2]) would return [2,5,1].
 ### listToString
 listToString takes one input, a list. It then concatenates it into a single string!
 Example: listToString(["Hello","there"]) would return "Hellothere".
+### slowprint
+slowprint is something I stole from my friend ultra bob, where it takes 2 inputs, the text and the time.
+It prints out the text over the span of how much time you inputted (in seconds).
+Example: slowprint("hello, world!", 5.3) would type "hello, world!" over the span of 5.3 seconds.
