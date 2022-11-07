@@ -13,3 +13,6 @@ For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
 ### removeEnd
 removeEnd is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
 For example, removeEnd(".fun","www.ozzy.fun") would return "www.ozzy".
+### isPalindrome
+isPalindrome takes one input and checks if it is a palindrome - or if it can be reversable and be the same thing!
+Example: isPalindrome("racecar") would return true, because "racecar" reversed is "racecar"
