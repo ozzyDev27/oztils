@@ -39,3 +39,6 @@ Example: fileErase("hello.txt") would remove everyting within "hello.txt"
 ### fileDelete
 fileDelete does exactly what it says on the tin - deletes the file! It takes one argument, the file name!
 Example: fileDelete("hello.txt") would simply delete "hello.txt"
+### fileRename
+fileRename does exactly what it says, renames the file. It takes two inputs, the file, and what you are renaming it to.
+Example: fileRename("hello.txt","world.txt") would rename "hello.txt" to "world.txt"
