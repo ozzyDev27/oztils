@@ -45,3 +45,5 @@ Example: fileRename("hello.txt","world.txt") would rename "hello.txt" to "world.
 ### isRound
 isRound takes an input of a number, and checks if it is round.
 Example: isRound(6.3) would return false, because it has a decimal.
+### intput
+Takes an input that must be an integer!
