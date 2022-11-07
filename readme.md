@@ -26,3 +26,7 @@ Example: listToString(["Hello","there"]) would return "Hellothere".
 slowprint is something I stole from my friend ultra bob, where it takes 2 inputs, the text and the time.
 It prints out the text over the span of how much time you inputted (in seconds).
 Example: slowprint("hello, world!", 5.3) would type "hello, world!" over the span of 5.3 seconds.
+### remove
+Instead of doing text.replace("~","") over and over again to remove the characters from a string you don't like, use remove!
+remove takes two arguments, text and toRemove - both strings. Every single character in toRemove gets removed from text!
+Example: remove("Hello, world! How are you doing today?", ",!?d") removes all commas, exclamation marks, question marks, and letter "d"'s from the string, returning "Hello worl How are you oing toay"
