@@ -30,3 +30,6 @@ Example: slowprint("hello, world!", 5.3) would type "hello, world!" over the spa
 Instead of doing text.replace("~","") over and over again to remove the characters from a string you don't like, use remove!
 remove takes two arguments, text and toRemove - both strings. Every single character in toRemove gets removed from text!
 Example: remove("Hello, world! How are you doing today?", ",!?d") removes all commas, exclamation marks, question marks, and letter "d"'s from the string, returning "Hello worl How are you oing toay"
+### fileAppend
+fileAppend takes two arguments, file, and toWrite. It proceeds to add the text "toWrite" to the end of the file.
+Example: fileAppend("hello.txt","Hello, world!") adds "Hello, world!" to the end of "hello.txt".
