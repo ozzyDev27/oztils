@@ -16,6 +16,8 @@ def removeEnd(end, strInp):
 def isPalindrome(check):
 	if str(check)==str(check)[::-1]: return True
 	else: return False
+def reverseList(ins):
+	return list(ins)[::-1]
 def listToString(listInp):return ''.join(listInp)
 def slowprint(text, delay):
     from time import sleep
