@@ -2,7 +2,7 @@ def nonIndexedRange(rangeInp):
 	lst = list(range(int(rangeInp)))
 	for i in lst: lst[i]+=1
 	return lst
-def invert(strInp):return strInp[::-1]
+def invert(strInp):return str(strInp)[::-1]
 def removeStart(start, strInp):
 	if strInp.startswith(str(start)):
 		startLength=len(str(start))
