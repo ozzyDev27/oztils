@@ -14,7 +14,7 @@ def removeEnd(end, strInp):
 		return strInp[:-endLength]
 	else:return strInp
 def isPalindrome(check):
-	if check==check[::-1]: return True
+	if str(check)==str(check)[::-1]: return True
 	else: return False
 def listToString(listInp):return ''.join(listInp)
 def slowprint(text, delay):
