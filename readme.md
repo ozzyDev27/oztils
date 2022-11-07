@@ -53,3 +53,6 @@ Example: simplify(2,6) returns [1,3], as a list, because 2 over 6 can be simplif
 ### isPrime
 Does what it says - returns true if the number input (must be int) is prime
 Example: isPrime(37) returns true, because 37 is a prime number!
+### deleteAllOf
+deleteAllOf takes two inputs - a list and something else (string, int - can be anything!) and returns the list, but removes every instance of the "something else"!
+Example: deleteAllOf(["hello","hi","hey","hi","how are you"],"hi") returns ["hello,"hey","how are you"]
