@@ -42,3 +42,6 @@ Example: fileDelete("hello.txt") would simply delete "hello.txt"
 ### fileRename
 fileRename does exactly what it says, renames the file. It takes two inputs, the file, and what you are renaming it to.
 Example: fileRename("hello.txt","world.txt") would rename "hello.txt" to "world.txt"
+### isRound
+isRound takes an input of a number, and checks if it is round.
+Example: isRound(6.3) would return false, because it has a decimal.
