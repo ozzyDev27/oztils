@@ -23,7 +23,7 @@ def slowprint(text, delay):
     from time import sleep
     for char in text:
         print(char, end="",flush=True)
-        sleep(delay)
+        sleep(delay/len(text))
     print()
 def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
