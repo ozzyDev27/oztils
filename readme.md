@@ -7,3 +7,6 @@ When you use range(3), it makes a list of [0,1,2], but when you use nonIndexedRa
 ### invert
 Takes a single input (preferrably a string, but can be anything) and returns what it is reversed.
 For example, "Hello" would return "olleH".
+### removeStart
+removeStart is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
+For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
