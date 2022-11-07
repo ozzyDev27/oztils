@@ -19,3 +19,6 @@ Example: isPalindrome("racecar") would return true, because "racecar" reversed i
 ### reverseList
 reverseList does exactly what it says, it reverses a list.
 Example: reverseList([1,5,2]) would return [2,5,1].
+### listToString
+listToString takes one input, a list. It then concatenates it into a single string!
+Example: listToString(["Hello","there"]) would return "Hellothere".
