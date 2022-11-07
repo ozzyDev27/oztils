@@ -65,3 +65,6 @@ Example: factorial(5) returns 120, because 5 factorial is 120.
 ### bound
 bound takes 3 inputs - all numbers (floats, ints, any number type). The first one is the value, the second is the minimum, and the third is the maximum. The minimum and maximum are practically the "walls", and makes sure the value doesn't go outside of it.
 Example: bound(6,7,9) returns 7, because the value, 6, is less than the minimum, 7, so it pushes it back.
+### getDifference
+getDifference gets the absolute difference of two numbers.
+Example: getDifference(7,9.3) returns 2.3, as the "distance" between the two numbers is 2.3.
