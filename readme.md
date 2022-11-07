@@ -33,3 +33,6 @@ Example: remove("Hello, world! How are you doing today?", ",!?d") removes all co
 ### fileAppend
 fileAppend takes two arguments, file, and toWrite. It proceeds to add the text "toWrite" to the end of the file.
 Example: fileAppend("hello.txt","Hello, world!") adds "Hello, world!" to the end of "hello.txt".
+### fileErase
+fileErase does not delete the file, it instead erases everything within it. It takes one argument, the file name.
+Example: fileErase("hello.txt") would remove everyting within "hello.txt"
