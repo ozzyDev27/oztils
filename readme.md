@@ -10,3 +10,6 @@ For example, "Hello" would return "olleH".
 ### removeStart
 removeStart is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
 For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
+### removeEnd
+removeEnd is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
+For example, removeEnd(".fun","www.ozzy.fun") would return "www.ozzy".
