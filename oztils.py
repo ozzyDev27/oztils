@@ -76,10 +76,7 @@ def abs(n):
 		try:return int(n)
 		except: return n
 def factorial(k):
-	s=k
-	for i in range(k-1):
-		s-=1
-		k*=s
+	for i in range(k-1):k*=(k-i)
 	return k
 def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):
