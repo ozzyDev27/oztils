@@ -44,9 +44,7 @@ def fileDelete(file):
 def fileRename(file,toRename):
 	import os
 	os.rename(file,toRename)
-def isRound(num):
-	if round(num)==num:return True
-	else:return False
+def isRound(num):return round(num)==num
 def intput(ina):
 	try: return int(input(ina))
 	except: return False
