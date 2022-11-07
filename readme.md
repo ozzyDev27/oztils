@@ -47,3 +47,6 @@ isRound takes an input of a number, and checks if it is round.
 Example: isRound(6.3) would return false, because it has a decimal.
 ### intput
 Takes an input that must be an integer!
+### simplify
+Simplifies a fraction as much as possible! Takes two inputs of integers, the numerator and denominator!
+Example: simplify(2,6) returns [1,3], as a list, because 2 over 6 can be simplified to 1 over 3.
