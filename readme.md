@@ -56,9 +56,6 @@ Example: isPrime(37) returns true, because 37 is a prime number!
 ### deleteAllOf
 deleteAllOf takes two inputs - a list and something else (string, int - can be anything!) and returns the list, but removes every instance of the "something else"!
 Example: deleteAllOf(["hello","hi","hey","hi","how are you"],"hi") returns ["hello,"hey","how are you"]
-### abs
-abs takes one input - a number (int, float, any number.) and returns the absolute value!
-Example: abs(-65.3) returns 65.3!
 ### factorial
 factorial takes one input - an integer. It returns the factorial of that number!
 Example: factorial(5) returns 120, because 5 factorial is 120.
