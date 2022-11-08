@@ -1,4 +1,4 @@
-def nonIndexedRange(rangeInp): return list(range(1,rangeInp+1))
+def nonIndexedRange(rangeInp): return list(range(1,int(rangeInp)+1))
 def invert(strInp):return str(strInp)[::-1]
 def removeStart(start, strInp):
 	if strInp.startswith(str(start)):
