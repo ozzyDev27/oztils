@@ -56,8 +56,7 @@ def isPrime(n):
 		if (n%i) == 0:return False
 	return True
 def deleteAllOf(ls,target):
-	while target in ls:
-		ls.pop(ls.index(target))
+	while target in ls:ls.pop(ls.index(target))
 	return ls
 def abs(n):
 	if n<0: 
