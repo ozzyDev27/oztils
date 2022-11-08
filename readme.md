@@ -68,3 +68,6 @@ Example: bound(6,7,9) returns 7, because the value, 6, is less than the minimum,
 ### getDifference
 getDifference gets the absolute difference of two numbers.
 Example: getDifference(7,9.3) returns 2.3, as the "distance" between the two numbers is 2.3.
+### loop
+the loop function is similar to the bound function, but instead of maxing it out at the max value, it loops back down to the lowest! It is similar to mod, but it keeps the loop within a certain range.
+Example: loop(7,4,6) returns 5, because 7, the value being inputted, is larger than the max of 6. This loops it over, and because it is 1 greater than the max, it returns 1 over the minimum.
