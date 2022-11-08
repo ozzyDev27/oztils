@@ -83,3 +83,5 @@ def getDifference(a,b):
 	else: 
 		try:return int(a-b)
 		except: return a-b
+def loop(value,minx,maxx):
+	return ((value-minx)%(maxx-minx+1))+minx
