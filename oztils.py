@@ -86,3 +86,4 @@ def getDifference(a,b):
 	else: 
 		try:return int(a-b)
 		except: return a-b
+def 
