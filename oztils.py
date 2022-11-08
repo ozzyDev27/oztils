@@ -58,23 +58,10 @@ def isPrime(n):
 def deleteAllOf(ls,target):
 	while target in ls:ls.pop(ls.index(target))
 	return ls
-def abs(n):
-	if n<0: 
-		try: return int(n*-1)
-		except: return n*-1
-	else: 
-		try:return int(n)
-		except: return n
 def factorial(k):
 	for i in range(k-1):k*=(k-i)
 	return k
 def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
-def getDifference(a,b):
-	if a-b<0: 
-		try: return int((a-b)*-1)
-		except: return (a-b)*-1
-	else: 
-		try:return int(a-b)
-		except: return a-b
+def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):
 	return ((value-minx)%(maxx-minx))+minx
