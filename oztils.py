@@ -10,9 +10,7 @@ def removeEnd(end, strInp):
 		endLength=len(str(end))
 		return strInp[:-endLength]
 	else:return strInp
-def isPalindrome(check):
-	if str(check)==str(check)[::-1]: return True
-	else: return False
+def isPalindrome(check):return str(check)==str(check)[::-1]
 def reverseList(ins):
 	return list(ins)[::-1]
 def listToString(listInp):return ''.join(listInp)
