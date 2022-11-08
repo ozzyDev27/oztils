@@ -85,5 +85,4 @@ def getDifference(a,b):
 		except: return (a-b)*-1
 	else: 
 		try:return int(a-b)
-		except: return a-b
-def 
+		except: return a-
