@@ -1,14 +1,10 @@
 def nonIndexedRange(rangeInp): return list(range(1,int(rangeInp)+1))
 def invert(strInp):return str(strInp)[::-1]
 def removeStart(start, strInp):
-	if strInp.startswith(str(start)):
-		startLength=len(str(start))
-		return strInp[startLength:]
+	if strInp.startswith(str(start)):return strInp[len(str(start)):]
 	else:return strInp
 def removeEnd(end, strInp):
-	if strInp.endswith(str(end)):
-		endLength=len(str(end))
-		return strInp[:-endLength]
+	if strInp.endswith(str(end)):return strInp[:-len(str(end))]
 	else:return strInp
 def isPalindrome(check):return str(check)==str(check)[::-1]
 def reverseList(ins):
