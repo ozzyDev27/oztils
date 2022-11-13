@@ -20,21 +20,19 @@ def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
 def fileAppend(file,toWrite):
-	import os
 	localOpen = open(file, "a")
 	localOpen.write(str(toWrite))
 	localOpen.close()
 def fileErase(file):
-	import os
 	localOpen = open(file, "w")
 	localOpen.write("")
 	localOpen.close()
 def fileDelete(file):
-	import os
-	os.remove(file)
+	from os import remove
+	remove(file)
 def fileRename(file,toRename):
-	import os
-	os.rename(file,toRename)
+	from os import rename
+	rename(file,toRename)
 def isRound(num):return round(num)==num
 def intput(ina):
 	try: return int(input(ina))
@@ -66,7 +64,7 @@ def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):
 	return ((value-minx)%(maxx-minx))+minx
 def jumble(s):
-	import random
+	from random import shuffle
 	l=s
-	random.shuffle(l)
+	shuffle(l)
 	return l
