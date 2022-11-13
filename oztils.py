@@ -65,3 +65,8 @@ def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):
 	return ((value-minx)%(maxx-minx))+minx
+def jumble(s):
+	import random
+	l=s
+	random.shuffle(l)
+	return l
