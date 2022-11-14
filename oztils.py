@@ -66,3 +66,7 @@ def camelToUnder(camel):
 	r=''
 	for char in c:r+= f"_{char.lower()}" if char == char.upper() else char 
 	return r
+def stripNot(remove,string):
+	r=''
+	for char in string:r+=char if char in list(remove) else ''
+	return r
