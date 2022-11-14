@@ -74,3 +74,7 @@ jumble takes one input - a list, and returns the same thing, but randomly sorted
 camelToUnder function takes a string as an argument, and converts it from camel case ("thisIsAnExampleOfCamelCase") to underscored ("this_is_an_example_of_underscored")
 Example:
 camelToUnder("helloWorldHowAreYou") returns "hello_world_how_are_you"
+### stripNot
+stripNot function takes two inputs, both strings. The first is everything you want to keep, and the second is the string. It then returns the second string, but gets rid of anything that is not in the first string.
+Example:
+stripNot('bda','abcdefgh') returns 'abd', because it only keeps the letters b, d and a.
