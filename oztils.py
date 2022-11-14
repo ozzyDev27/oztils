@@ -62,3 +62,7 @@ def jumble(s):
 	l=s
 	shuffle(l)
 	return l
+def camelToUnder(camel):
+	r=''
+	for char in c:r+= f"_{char.lower()}" if char == char.upper() else char 
+	return r
