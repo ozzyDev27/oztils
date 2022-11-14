@@ -70,3 +70,7 @@ the loop function is similar to the bound function, but instead of maxing it out
 Example: loop(7,4,6) returns 5, because 7, the value being inputted, is larger than the max of 6. This loops it over, and because it is 1 greater than the max, it returns 1 over the minimum.
 ### jumble
 jumble takes one input - a list, and returns the same thing, but randomly sorted
+### camelToUnder
+camelToUnder function takes a string as an argument, and converts it from camel case ("thisIsAnExampleOfCamelCase") to underscored ("this_is_an_example_of_underscored")
+Example:
+camelToUnder("helloWorldHowAreYou") returns "hello_world_how_are_you"
