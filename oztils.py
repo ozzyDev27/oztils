@@ -5,7 +5,7 @@ def removeEnd(end, strInp):return strInp[:-len(str(end))] if strInp.endswith(str
 def isPalindrome(check):return str(check)==str(check)[::-1]
 def reverseList(ins):return list(ins)[::-1]
 def listToString(listInp):return ''.join(listInp)
-def slowprint(text: str, delay):
+def slowprint(text, delay):
     from time import sleep
     for char in text:
         print(char, end="",flush=True)
