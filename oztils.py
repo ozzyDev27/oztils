@@ -7,15 +7,13 @@ def removeEnd(end, strInp):
 	if strInp.endswith(str(end)):return strInp[:-len(str(end))]
 	else:return strInp
 def isPalindrome(check):return str(check)==str(check)[::-1]
-def reverseList(ins):
-	return list(ins)[::-1]
+def reverseList(ins):return list(ins)[::-1]
 def listToString(listInp):return ''.join(listInp)
 def slowprint(text: str, delay):
     from time import sleep
     for char in text:
         print(char, end="",flush=True)
         sleep(delay/len(text))
-    print()
 def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
