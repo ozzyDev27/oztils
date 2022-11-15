@@ -70,3 +70,6 @@ def stripNot(remove,string):
 	r=''
 	for char in string:r+=char if char in list(remove) else ''
 	return r
+def percent(per):
+	from random import randint
+	return True if randint(1,100)<=per else False
