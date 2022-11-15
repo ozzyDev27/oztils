@@ -78,3 +78,5 @@ camelToUnder("helloWorldHowAreYou") returns "hello_world_how_are_you"
 stripNot function takes two inputs, both strings. The first is everything you want to keep, and the second is the string. It then returns the second string, but gets rid of anything that is not in the first string.
 Example:
 stripNot('bda','abcdefgh') returns 'abd', because it only keeps the letters b, d and a.
+### percent
+percent is a function that takes a single input - a number (float, int). It then true n percent of the time, where n is the argument.
