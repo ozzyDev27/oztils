@@ -59,9 +59,8 @@ def loop(value,minx,maxx):
 	return ((value-minx)%(maxx-minx))+minx
 def jumble(s):
 	from random import shuffle
-	l=s
-	shuffle(l)
-	return l
+	shuffle(s)
+	return s
 def camelToUnder(camel):
 	r=''
 	for char in c:r+= f"_{char.lower()}" if char == char.upper() else char 
@@ -73,3 +72,6 @@ def stripNot(remove,string):
 def percent(per):
 	from random import randint
 	return True if randint(1,100)<=per else False
+def coinFlip():
+	from random import randint
+	return True if randint(0,1)<1 else False
