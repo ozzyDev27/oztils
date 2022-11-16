@@ -53,7 +53,7 @@ def deleteAllOf(ls,target):
 def factorial(k):
 	for i in range(k-1):k*=(k-i)
 	return k
-def bound(num,maxn,minn):sorted((minn, num, maxn))[1]
+def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):
 	return ((value-minx)%(maxx-minx))+minx
