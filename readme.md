@@ -82,3 +82,8 @@ stripNot('bda','abcdefgh') returns 'abd', because it only keeps the letters b, d
 percent is a function that takes a single input - a number (float, int). It then true n percent of the time, where n is the argument.
 ### coinFlip
 coinFlip is a function that returns True half of the time, and False the other half.
+### query
+query is a function that searches Google. It takes a single argument, a string, and returns a string.
+Example:
+query("GitHub") returns
+GitHub is where over 94 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, ...
