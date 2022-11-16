@@ -80,12 +80,12 @@ def query(q):
 	from bs4 import BeautifulSoup
 	from cache_to_disk import cache_to_disk, NoCacheCondition
 	@cache_to_disk(10)
-    url = "https://www.google.com/search?q={}".format(q.replace(" ", "+"))
-    response = g(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    open("output.html", "w").write(response.text)
-    if answer := soup.find(class_='BNeawe iBp4i AP7Wnd'):res = (answer.text, True)
-    elif snippet := soup.find(class_='BNeawe s3v9rd AP7Wnd'):
-        [x.decompose() for x in snippet.find_all(name="a", recursive=True)]
-        res = (snippet.text.replace(" · ", ''), False)
-    return res[0]
+	url = "https://www.google.com/search?q={}".format(q.replace(" ", "+"))
+	response = g(url)
+	soup = BeautifulSoup(response.text, 'html.parser')
+	open("output.html", "w").write(response.text)
+	if answer := soup.find(class_='BNeawe iBp4i AP7Wnd'):res = (answer.text, True)
+	elif snippet := soup.find(class_='BNeawe s3v9rd AP7Wnd'):
+		[x.decompose() for x in snippet.find_all(name="a", recursive=True)]
+		res = (snippet.text.replace(" · ", ''), False)
+	return res[0]
