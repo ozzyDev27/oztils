@@ -87,3 +87,5 @@ query is a function that searches Google. It takes a single argument, a string, 
 Example:
 query("GitHub") returns
 GitHub is where over 94 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories, ...
+### getFactors
+getFactors is a function that does what is says - it gets the factor of a number. It takes a single argument, an int, and returns a list of all of its factors.
