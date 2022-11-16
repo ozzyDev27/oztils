@@ -80,3 +80,5 @@ Example:
 stripNot('bda','abcdefgh') returns 'abd', because it only keeps the letters b, d and a.
 ### percent
 percent is a function that takes a single input - a number (float, int). It then true n percent of the time, where n is the argument.
+### coinFlip
+coinFlip is a function that returns True half of the time, and False the other half.
