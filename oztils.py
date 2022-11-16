@@ -89,3 +89,9 @@ def query(q):
 		[x.decompose() for x in snippet.find_all(name="a", recursive=True)]
 		res = (snippet.text.replace(" · ", ''), False)
 	return res[0]
+def getFactors(n):
+	f=[1]
+	for _ in range(2,round((n/2))+3): 
+		if n%_==0: f.append(_)
+	f.append(n)
+	return f
