@@ -3,7 +3,6 @@ def invert(strInp):return str(strInp)[::-1]
 def removeStart(start, strInp):return strInp[len(str(start)):] if strInp.startswith(str(start)) else strInp
 def removeEnd(end, strInp):return strInp[:-len(str(end))] if strInp.endswith(str(end)) else strInp
 def isPalindrome(check):return str(check)==str(check)[::-1]
-def reverseList(ins):return list(ins)[::-1]
 def listToString(listInp):return ''.join(listInp)
 def slowprint(text, delay):
     from time import sleep
