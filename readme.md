@@ -16,9 +16,6 @@ For example, removeEnd(".fun","www.ozzy.fun") would return "www.ozzy".
 ### isPalindrome
 isPalindrome takes one input and checks if it is a palindrome - or if it can be reversable and be the same thing!
 Example: isPalindrome("racecar") would return true, because "racecar" reversed is "racecar"
-### reverseList
-reverseList does exactly what it says, it reverses a list.
-Example: reverseList([1,5,2]) would return [2,5,1].
 ### listToString
 listToString takes one input, a list. It then concatenates it into a single string!
 Example: listToString(["Hello","there"]) would return "Hellothere".
