@@ -55,13 +55,10 @@ def factorial(k):
 def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):return ((value-minx)%(maxx-minx))+minx
-def jumble(s):
-	from random import shuffle
-	shuffle(s)
-	return s
+def jumble(s):from random import shuffle;shuffle(s);return s
 def camelToUnder(camel):
 	r=''
-	for char in c:r+= f"_{char.lower()}" if char == char.upper() else char 
+	for char in camel:r+= f"_{char.lower()}" if char == char.upper() else char 
 	return r
 def stripNot(remove,string):
 	r=''
