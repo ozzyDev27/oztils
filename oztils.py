@@ -70,10 +70,10 @@ def stripNot(remove,string):
 	return r
 def percent(per):
 	from random import randint
-	return True if randint(1,100)<=per else False
+	return randint(1,100)<=per
 def coinFlip():
 	from random import randint
-	return True if randint(0,1)<1 else False
+	return randint(0,1)<1
 def getFactors(n):
 	f=[1]
 	for _ in range(2,round((n/2))+3): 
