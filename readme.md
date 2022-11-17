@@ -92,3 +92,5 @@ Thank you Ultra_blob for letting (loose term) me use (steal) "your" code
 getFactors is a function that does what is says - it gets the factor of a number. It takes a single argument, an int, and returns a list of all of its factors.
 ### isUnique
 isUnique is a function that takes a single argument, a list. It then returns True if every item in the list is unique, meaning it has no duplicates.
+### mean
+mean is a function that takes an input of a list, that contains numbers (floats, ints, etc.) and returns the mean of the number.
