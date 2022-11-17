@@ -95,3 +95,4 @@ def getFactors(n):
 		if n%_==0: f.append(_)
 	f.append(n)
 	return f
+def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
