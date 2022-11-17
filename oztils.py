@@ -55,8 +55,7 @@ def factorial(k):
 	return k
 def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):return abs(a-b)
-def loop(value,minx,maxx):
-	return ((value-minx)%(maxx-minx))+minx
+def loop(value,minx,maxx):return ((value-minx)%(maxx-minx))+minx
 def jumble(s):
 	from random import shuffle
 	shuffle(s)
