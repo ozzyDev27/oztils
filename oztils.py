@@ -29,7 +29,7 @@ def fileRename(file,toRename):
 def isRound(num):return round(num)==num
 def intput(ina):
 	try: return int(input(ina))
-	except: return False
+	except: pass
 def simplify(a,b):
 	factsA=[]
 	for checkA in range(1,round(a/2+1)):
