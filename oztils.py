@@ -49,9 +49,7 @@ def isPrime(n):
 def deleteAllOf(ls,target):
 	while target in ls:ls.pop(ls.index(target))
 	return ls
-def factorial(k):
-	for i in range(k-1):k*=(k-i)
-	return k
+def factorial(k):return n * factorial(n-1) if n else 1
 def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
 def getDifference(a,b):return abs(a-b)
 def loop(value,minx,maxx):return ((value-minx)%(maxx-minx))+minx
