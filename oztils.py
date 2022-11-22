@@ -77,3 +77,4 @@ def getFactors(n):
 def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
 def mean(numbers):return sum(numbers)/len(numbers)
 def sqrt(n):return n**.5
+def num(n):return int(n) if float(n).endswith(".0") else float(n)
