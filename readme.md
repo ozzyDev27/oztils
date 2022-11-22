@@ -85,3 +85,7 @@ getFactors is a function that does what is says - it gets the factor of a number
 isUnique is a function that takes a single argument, a list. It then returns True if every item in the list is unique, meaning it has no duplicates.
 ### mean
 mean is a function that takes an input of a list, that contains numbers (floats, ints, etc.) and returns the mean of the number.
+### num
+num is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end
+Example:
+num("7") returns an int of 7, whereas num(7.3) returns a float of 7.3
