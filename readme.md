@@ -89,3 +89,5 @@ mean is a function that takes an input of a list, that contains numbers (floats,
 num is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end
 Example:
 num("7") returns an int of 7, whereas num(7.3) returns a float of 7.3
+### xor
+what is says lol
