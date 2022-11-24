@@ -79,3 +79,6 @@ def mean(numbers):return sum(numbers)/len(numbers)
 def sqrt(n):return n**.5
 def num(n):return int(n) if float(n).endswith(".0") else float(n)
 def xor(a,b):return (a or b) and (not a and b)
+def mustInput(s,w):
+	n=input(s)
+	while not n in w:n=input(s)
