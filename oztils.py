@@ -82,3 +82,5 @@ def xor(a,b):return (a or b) and (not a and b)
 def mustInput(s,w):
 	n=input(s)
 	while not n in w:n=input(s)
+def ceil(n):return round(n)+1 if round(n)<n else 0
+def floor(n):return round(n)+1 if round(n)>n else 0
