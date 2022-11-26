@@ -84,3 +84,4 @@ def mustInput(s,w):
 	while not n in w:n=input(s)
 def ceil(n):return round(n)+1 if round(n)<n else 0
 def floor(n):return round(n)+1 if round(n)>n else 0
+def bored():return "bored"
