@@ -21,6 +21,7 @@ def num(n):return int(n) if float(n).endswith(".0") else float(n)
 def xor(a,b):return (a or b) and (not a and b)
 def ceil(n):return round(n)+1 if round(n)<n else round(n)
 def floor(n):return round(n)+1 if round(n)>n else round(n)
+def isPrime(n):return 0 not in [n%i for i in range(2,n//2+1)]
 def slowprint(text, delay):
     from time import sleep
     for char in text:
@@ -44,10 +45,6 @@ def simplify(a,b):
 			facts.append(_)
 			break
 	return [int(a/facts[len(facts)-1]),int(b/facts[len(facts)-1])]
-def isPrime(n):
-	for i in range(2,round(n/2)+2):
-		if (n%i) == 0:return False
-	return True
 def deleteAllOf(ls,target):
 	while target in ls:ls.pop(ls.index(target))
 	return ls
