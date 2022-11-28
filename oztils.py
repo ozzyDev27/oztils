@@ -22,6 +22,8 @@ def xor(a,b):return (a or b) and (not a and b)
 def ceil(n):return round(n)+1 if round(n)<n else round(n)
 def floor(n):return round(n)+1 if round(n)>n else round(n)
 def isPrime(n):return 0 not in [n%i for i in range(2,n//2+1)]
+def percent(per):from random import randint;return randint(1,100)<=per
+def coinFlip():from random import randint;return randint(0,1)<1
 def slowprint(text, delay):
     from time import sleep
     for char in text:
@@ -56,12 +58,6 @@ def stripNot(remove,string):
 	r=''
 	for char in string:r+=char if char in list(remove) else ''
 	return r
-def percent(per):
-	from random import randint
-	return randint(1,100)<=per
-def coinFlip():
-	from random import randint
-	return randint(0,1)<1
 def getFactors(n):
 	f=[1]
 	for _ in range(2,round(n)+2 if round(n)>n else round(n)+1): 
