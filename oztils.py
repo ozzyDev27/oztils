@@ -4,6 +4,23 @@ def removeStart(start, strInp):return strInp[len(str(start)):] if strInp.startsw
 def removeEnd(end, strInp):return strInp[:-len(str(end))] if strInp.endswith(str(end)) else strInp
 def isPalindrome(check):return str(check)==str(check)[::-1]
 def listToString(listInp):return ''.join(listInp)
+def isRound(num):return round(num)==num
+def factorial(n):return n * factorial(n-1) if n else 1
+def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
+def getDifference(a,b):return abs(a-b)
+def loop(value,minx,maxx):return ((value-minx)%(maxx-minx))+minx
+def jumble(s):from random import shuffle;shuffle(s);return s
+def fileDelete(file):from os import remove;remove(file)
+def fileRename(file,toRename):from os import rename;rename(file,toRename)
+def fileAppend(file,toWrite):localOpen = open(file, "a");localOpen.write(str(toWrite));localOpen.close()
+def fileErase(file):localOpen = open(file, "w");localOpen.write("");localOpen.close()
+def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
+def mean(numbers):return sum(numbers)/len(numbers)
+def sqrt(n):return n**.5
+def num(n):return int(n) if float(n).endswith(".0") else float(n)
+def xor(a,b):return (a or b) and (not a and b)
+def ceil(n):return round(n)+1 if round(n)<n else round(n)
+def floor(n):return round(n)+1 if round(n)>n else round(n)
 def slowprint(text, delay):
     from time import sleep
     for char in text:
@@ -12,21 +29,6 @@ def slowprint(text, delay):
 def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
-def fileAppend(file,toWrite):
-	localOpen = open(file, "a")
-	localOpen.write(str(toWrite))
-	localOpen.close()
-def fileErase(file):
-	localOpen = open(file, "w")
-	localOpen.write("")
-	localOpen.close()
-def fileDelete(file):
-	from os import remove
-	remove(file)
-def fileRename(file,toRename):
-	from os import rename
-	rename(file,toRename)
-def isRound(num):return round(num)==num
 def intput(ina):
 	try: return int(input(ina))
 	except: pass
@@ -49,11 +51,6 @@ def isPrime(n):
 def deleteAllOf(ls,target):
 	while target in ls:ls.pop(ls.index(target))
 	return ls
-def factorial(n):return n * factorial(n-1) if n else 1
-def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
-def getDifference(a,b):return abs(a-b)
-def loop(value,minx,maxx):return ((value-minx)%(maxx-minx))+minx
-def jumble(s):from random import shuffle;shuffle(s);return s
 def camelToUnder(camel):
 	r=''
 	for char in camel:r+= f"_{char.lower()}" if char == char.upper() else char 
@@ -74,13 +71,6 @@ def getFactors(n):
 		if n%_==0: f.append(_)
 	f.append(n)
 	return f
-def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
-def mean(numbers):return sum(numbers)/len(numbers)
-def sqrt(n):return n**.5
-def num(n):return int(n) if float(n).endswith(".0") else float(n)
-def xor(a,b):return (a or b) and (not a and b)
 def mustInput(s,w):
 	n=input(s)
 	while not n in w:n=input(s)
-def ceil(n):return round(n)+1 if round(n)<n else round(n)
-def floor(n):return round(n)+1 if round(n)>n else round(n)
