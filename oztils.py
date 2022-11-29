@@ -62,8 +62,7 @@ def getFactors(n):
 	f=[1]
 	for _ in range(2,round(n)+2 if round(n)>n else round(n)+1): 
 		if n%_==0: f.append(_)
-	f.append(n)
-	return f
+	return f+[n]
 def mustInput(s,w):
 	n=input(s)
 	while not n in w:n=input(s)
