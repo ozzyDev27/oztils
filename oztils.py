@@ -66,3 +66,4 @@ def getFactors(n):
 def mustInput(s,w):
 	n=input(s)
 	while not n in w:n=input(s)
+	return n
