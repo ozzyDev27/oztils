@@ -24,6 +24,7 @@ def floor(n):return round(n)+1 if round(n)>n else round(n)
 def isPrime(n):return 0 not in [n%i for i in range(2,n//2+1)]
 def percent(per):from random import randint;return randint(1,100)<=per
 def coinFlip():from random import randint;return randint(0,1)<1
+def formatNumber(n):return ",".join([str(round(n)-1 if round(n)>n else round(n))[::-1][i:i+3][::-1] for i in range(0, len(str(round(n)-1 if round(n)>n else round(n))), 3)][::-1])+"."+str(n).split(".",1)[1]
 def slowprint(text, delay):
     from time import sleep
     for char in text:
