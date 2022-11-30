@@ -1,5 +1,2 @@
-def test(variableOfUnknownType):
-  getType=type(variableOfUnknownType)
-  variableOfUnknownType=eval(f"{str(getType)[8:-2]}(str(variableOfUnknownType)[::-1])")
-  return variableOfUnknownType
+def test(variableOfUnknownType):return eval(f"{str(type(variableOfUnknownType))[8:-2]}(str(variableOfUnknownType)[::-1])")
 print(test(7431))

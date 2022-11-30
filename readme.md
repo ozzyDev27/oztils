@@ -7,7 +7,7 @@ When you use `range(3)`, it makes a list of `[0,1,2]`, but when you use `nonInde
 Example: ```nonIndexedRange(4)``` returns a list of ```[1,2,3,4]```
 ### invert
 The ```invert``` function takes a single input (anything) and returns what it is reversed.  
-Example: ```"Hello"``` would return ```"olleH"```, and 
+Example: ```invert("Hello")``` would return ```"olleH"```, and ```invert(7431)``` would return ```1347```
 ### removeStart
 removeStart is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
 For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
