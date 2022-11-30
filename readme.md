@@ -90,11 +90,16 @@ Example: ```percent(36)``` returns ```True``` 36% of the time.
 ```coinFlip``` is a function that returns ```True``` half of the time, and ```False``` the other half.
 Example: ```coinFlip()``` returns ```True``` half of the time.
 ### getFactors
-getFactors is a function that does what is says - it gets the factor of a number. It takes a single argument, an int, and returns a list of all of its factors.
+```getFactors``` is a function that does what is says - it gets the factor of a number.  
+It takes a single argument, an int, and returns a list of all of its factors.  
+Example: ```getFactors(27)``` returns ```[1,3,9,27]```
 ### isUnique
-isUnique is a function that takes a single argument, a list. It then returns True if every item in the list is unique, meaning it has no duplicates.
+```isUnique``` is a function that takes a single argument, a list.  
+It then returns True if every item in the list is unique, meaning it has no duplicates.  
+Example: ```isUnique([1,6,2,9,3,5,1])``` returns ```False``` because it has ```1``` twice.
 ### mean
-mean is a function that takes an input of a list, that contains numbers (floats, ints, etc.) and returns the mean of the number.
+```mean``` is a function that takes an input of a list, that contains numbers and returns the mean of the list.  
+Example: ```mean([9,10,29])``` returns ```16```, because the mean of ```9, 10, 29``` is ```16```
 ### num
 num is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end
 Example:
