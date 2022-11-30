@@ -35,54 +35,60 @@ Example: ```remove("Hello, world! How are you doing today?", ",!?d")``` removes 
 It then appends the string to the file.  
 Example: ```fileAppend("test.txt","Hello, world!")``` adds ```"Hello, world!"``` to the end of ```"test.txt"```.
 ### fileErase
-fileErase does not delete the file, it instead erases everything within it. It takes one argument, the file name.
-Example: fileErase("hello.txt") would remove everyting within "hello.txt"
+```fileErase``` does not delete the file, it instead erases everything within it. It takes one argument, the file path.  
+Example: ```fileErase("hello.txt")``` would remove everyting within ```"hello.txt"```
 ### fileDelete
-fileDelete does exactly what it says on the tin - deletes the file! It takes one argument, the file name!
-Example: fileDelete("hello.txt") would simply delete "hello.txt"
+```fileDelete``` does exactly what it says on the tin - deletes the file! It takes one argument, the file path.  
+Example: ```fileDelete("hello.txt")``` would simply delete ```"hello.txt"```
 ### fileRename
-fileRename does exactly what it says, renames the file. It takes two inputs, the file, and what you are renaming it to.
-Example: fileRename("hello.txt","world.txt") would rename "hello.txt" to "world.txt"
+```fileRename``` does exactly what it says, renames the file. It takes two inputs, the file path, and what you are renaming it to.  
+Example: ```fileRename("hello.txt","world.txt")``` would rename ```"hello.txt"``` to ```"world.txt"```
 ### isRound
-isRound takes an input of a number, and checks if it is round.
-Example: isRound(6.3) would return false, because it has a decimal.
-### intput
-Takes an input that must be an integer!
+```isRound``` takes an input of a number, and checks if it is round.  
+Example: ```isRound(6.3)``` would return ```False```, because it has a decimal.
 ### simplify
-Simplifies a fraction as much as possible! Takes two inputs of integers, the numerator and denominator!
-Example: simplify(2,6) returns [1,3], as a list, because 2 over 6 can be simplified to 1 over 3.
+The function ```simplify``` simplifies a fraction as much as possible!  
+It takes two inputs of integers, the numerator and denominator!  
+Example: ```simplify(2,6)``` returns ```[1,3]```, as a list, because ```2 over 6``` can be simplified to ```1 over 3```
 ### isPrime
-Does what it says - returns true if the number input (must be int) is prime
-Example: isPrime(37) returns true, because 37 is a prime number!
+The function ```isPrime``` does what it says - returns ```True``` if the number input (must be int) is prime!  
+Example: ```isPrime(37)``` returns ```True```, because ```37``` is a prime number!
 ### deleteAllOf
-deleteAllOf takes two inputs - a list and something else (string, int - can be anything!) and returns the list, but removes every instance of the "something else"!
-Example: deleteAllOf(["hello","hi","hey","hi","how are you"],"hi") returns ["hello,"hey","how are you"]
+```deleteAllOf``` takes two inputs - a list and something else (string, int - can be anything!) and returns the list, but removes every instance of the "something else"!  
+Example: ```deleteAllOf(["hello","hi","hey","hi","how are you"],"hi")``` returns ```["hello,"hey","how are you"]```
 ### factorial
-factorial takes one input - an integer. It returns the factorial of that number!
-Example: factorial(5) returns 120, because 5 factorial is 120.
+```factorial``` takes one input - an integer. It then returns the factorial of that number!
+Example: ```factorial(5)``` returns ```120```, because ```5 factorial``` is ```120```.
 ### clamp
-clamp takes 3 inputs - all numbers (floats, ints, any number type). The first one is the value, the second is the minimum, and the third is the maximum. The minimum and maximum are practically the "walls", and makes sure the value doesn't go outside of it.
-Example: clamp(6,7,9) returns 7, because the value, 6, is less than the minimum, 7, so it pushes it back.
+```clamp``` takes 3 inputs, all numbers.  
+The first one is the value, the second is the minimum, and the third is the maximum.  
+The minimum and maximum are practically the "walls", and makes sure the value doesn't go outside of it.  
+Example: ```clamp(6,7,9)``` returns ```7```, because the value, ```6```, is less than the minimum, ```7```, so it pushes it back.
 ### getDifference
-getDifference gets the absolute difference of two numbers.
-Example: getDifference(7,9.3) returns 2.3, as the "distance" between the two numbers is 2.3.
+```getDifference``` gets the absolute difference of two numbers.  
+Example: ```getDifference(7,9.3)``` returns ```2.3```, as the "distance" between the two numbers is ```2.3```.
 ### loop
-the loop function is similar to the bound function, but instead of maxing it out at the max value, it loops back down to the lowest! It is similar to mod, but it keeps the loop within a certain range.
-Example: loop(7,4,6) returns 5, because 7, the value being inputted, is larger than the max of 6. This loops it over, and because it is 1 greater than the max, it returns 1 over the minimum.
+The ```loop``` function is similar to the clamp function, but instead of maxing it out at the max value, it loops back down to the lowest!  
+is similar to mod, but it keeps the loop within a certain range.  
+Example: ```loop(7,4,6)``` returns ```5```, because ```7```, the value being inputted, is larger than the max of ```6```. This loops it over, and because it is ```1``` greater than the max, it returns ```1``` over the minimum.
 ### jumble
-jumble takes one input - a list, and returns the same thing, but randomly sorted
+The ```jumble``` function takes one input - a list, and returns the same thing, but randomly sorted.  
+Example: ```jumble([1,2,3])``` could return any assortment of the list, such as ```[3,1,2]```, or even ```[2,3,1]```.
 ### camelToUnder
-camelToUnder function takes a string as an argument, and converts it from camel case ("thisIsAnExampleOfCamelCase") to underscored ("this_is_an_example_of_underscored")
-Example:
-camelToUnder("helloWorldHowAreYou") returns "hello_world_how_are_you"
+```camelToUnder``` is a function takes a string as an argument, and converts it from camel case  
+(```thisIsAnExampleOfCamelCase```) to underscored (```this_is_an_example_of_underscored```)   
+Example: ```camelToUnder("helloWorldHowAreYou")``` returns ```"hello_world_how_are_you"```
 ### stripNot
-stripNot function takes two inputs, both strings. The first is everything you want to keep, and the second is the string. It then returns the second string, but gets rid of anything that is not in the first string.
-Example:
-stripNot('bda','abcdefgh') returns 'abd', because it only keeps the letters b, d and a.
+The ```stripNot``` function takes two inputs, both strings.  
+The first is everything you want to keep, and the second is the string.  
+It then returns the second string, but gets rid of anything that is not in the first string.  
+Example: ```stripNot('bda','abcdefgh')``` returns ```'abd'```, because it only keeps the letters ```b```, ```d``` and ```a```.
 ### percent
-percent is a function that takes a single input - a number (float, int). It then true n percent of the time, where n is the argument.
+```percent``` is a function that takes a single input - a number. It then returns ```True``` that percent of the time, and ```False``` the other times.  
+Example: ```percent(36)``` returns ```True``` 36% of the time.
 ### coinFlip
-coinFlip is a function that returns True half of the time, and False the other half.
+```coinFlip``` is a function that returns ```True``` half of the time, and ```False``` the other half.
+Example: ```coinFlip()``` returns ```True``` half of the time.
 ### getFactors
 getFactors is a function that does what is says - it gets the factor of a number. It takes a single argument, an int, and returns a list of all of its factors.
 ### isUnique

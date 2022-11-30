@@ -39,9 +39,6 @@ def slowprint(text, delay):
 def remove(strIn, toRemove):
 	for char in toRemove: strIn=strIn.replace(char,'')
 	return strIn
-def intput(ina):
-	try: return int(input(ina))
-	except: pass
 def simplify(a,b):
 	factsA=[]
 	for checkA in range(1,round(a/2+1)):
