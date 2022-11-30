@@ -92,4 +92,5 @@ num("7") returns an int of 7, whereas num(7.3) returns a float of 7.3
 ### xor
 what is says lol
 ### floor
-The `floor` function rounds any number down. It takes a single argument, a number.\ Example: ```floor(17.561)``` returns ```17```
+The `floor` function rounds any number down. It takes a single argument, a number.  
+Example: ```floor(17.561)``` returns ```17```
