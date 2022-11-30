@@ -31,8 +31,9 @@ Instead of doing ```text.replace("~","")``` over and over again to remove the ch
 ```remove``` takes two arguments, both strings. Every single character in the second string gets removed from text!   
 Example: ```remove("Hello, world! How are you doing today?", ",!?d")``` removes all ```,```s, ```!```s, ```?```s, and ```d```s from the string, returning ```"Hello worl How are you oing toay"```
 ### fileAppend
-fileAppend takes two arguments, file, and toWrite. It proceeds to add the text "toWrite" to the end of the file.
-Example: fileAppend("hello.txt","Hello, world!") adds "Hello, world!" to the end of "hello.txt".
+```fileAppend``` takes two arguments both strings. The first string is a file path, and the second is any string.  
+It then appends the string to the file.  
+Example: ```fileAppend("test.txt","Hello, world!")``` adds ```"Hello, world!"``` to the end of ```"test.txt"```.
 ### fileErase
 fileErase does not delete the file, it instead erases everything within it. It takes one argument, the file name.
 Example: fileErase("hello.txt") would remove everyting within "hello.txt"
