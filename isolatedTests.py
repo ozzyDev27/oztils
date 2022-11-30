@@ -1,5 +1,5 @@
-def getFactors(n):
-	f=[1]
-	for _ in range(2,round(n)+2 if round(n)>n else round(n)+1):f.append(_) if n%_==0 else (1+1)
-	return f
-print(getFactors(27))
+def test(variableOfUnknownType):
+  getType=type(variableOfUnknownType)
+  variableOfUnknownType=eval(f"{str(getType)[8:-2]}(str(variableOfUnknownType)[::-1])")
+  return variableOfUnknownType
+print(test(7431))

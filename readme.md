@@ -2,11 +2,12 @@
 oztils is just a small "module", that has a ton of random features!
 # Functions
 ### nonIndexedRange
-nonIndexedRange takes an input of an int, and returns a range type. 
-When you use range(3), it makes a list of [0,1,2], but when you use nonIndexedRange(3), it returns [1,2,3]
+The `nonIndexedRange` function takes an input of an int, and returns a list.  
+When you use `range(3)`, it makes a list of `[0,1,2]`, but when you use `nonIndexedRange(3)`, it returns `[1,2,3]`  
+Example: ```nonIndexedRange(4)``` returns a list of ```[1,2,3,4]```
 ### invert
-Takes a single input (preferrably a string, but can be anything) and returns what it is reversed.
-For example, "Hello" would return "olleH".
+The ```invert``` function takes a single input (anything) and returns what it is reversed.  
+Example: ```"Hello"``` would return ```"olleH"```, and 
 ### removeStart
 removeStart is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
 For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
@@ -94,3 +95,13 @@ what is says lol
 ### floor
 The `floor` function rounds any number down. It takes a single argument, a number.  
 Example: ```floor(17.561)``` returns ```17```
+### ciel
+pass
+### mustInput
+pass
+### formatNumber
+pass
+### reciprocal
+pass
+### numberToBase
+pass
