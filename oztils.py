@@ -27,10 +27,10 @@ def coinFlip():from random import randint;return randint(0,1)<1
 def formatNumber(n):return ",".join([str(round(n)-1 if round(n)>n else round(n))[::-1][i:i+3][::-1] for i in range(0, len(str(round(n)-1 if round(n)>n else round(n))), 3)][::-1])+"."+str(n).split(".",1)[1]
 def reciprocal(n):return 1/n
 def numberToBase(n, b):
-    if n==0:return [0]
+    if n==0:return 0
     digits = []
     while n:digits.append(int(n % b));n//=b
-    return digits[::-1]
+    return ''.join(digits[::-1])
 def slowprint(text, delay):
     from time import sleep
     for char in text:

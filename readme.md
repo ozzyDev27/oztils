@@ -101,21 +101,31 @@ Example: ```isUnique([1,6,2,9,3,5,1])``` returns ```False``` because it has ```1
 ```mean``` is a function that takes an input of a list, that contains numbers and returns the mean of the list.  
 Example: ```mean([9,10,29])``` returns ```16```, because the mean of ```9, 10, 29``` is ```16```
 ### num
-num is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end
-Example:
-num("7") returns an int of 7, whereas num(7.3) returns a float of 7.3
+```num``` is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end.  
+Example: ```num("7")``` returns ```7```, whereas ```num(7.3)``` returns ```7.3```
 ### xor
-what is says lol
+```xor``` is a function that does exactly what the bitwise operation is.  
+It takes two arguments, both booleans. It then returns ```a xor b```.
+Example: ```xor(True, False)``` returns ```True``` because ```True xor False``` is ```True```.
 ### floor
-The `floor` function rounds any number down. It takes a single argument, a number.  
+The ```floor``` function rounds any number down. It takes a single argument, a number.  
 Example: ```floor(17.561)``` returns ```17```
 ### ciel
-pass
+The ```ciel``` function rounds any number up. It takes a single argument, a number.  
+Example: ```ciel(17.561)``` returns ```18```
 ### mustInput
-pass
+```mustInput``` is a function that takes two arguments, a string and a list of strings.  
+It then gives an input of the first string, and repeats until the answer is in the list of strings.  
+Example: ```mustInput("Enter a fruit: ",["apple","banana","orange"])``` creates an input of ```Enter a fruit:``` and repeats until the answer is either ```apple```, ```banana```, or ```orange```.
 ### formatNumber
-pass
+```formatNumber``` is a function that takes one argument, a number.  
+It then returns the number appropriately formatted with commas.  
+Example: ```formatNumber(12345.67)``` returns ```"12,345.67"```
 ### reciprocal
-pass
+The ```reciprocal``` function takes a single input, a number.  
+It then returns the reciprocal of the number.  
+Example: ```reciprocal(4)``` returns ```0.25``` because the reciprocal of ```4``` is ```0.25```.
 ### numberToBase
-pass
+The ```numberToBase``` function takes two inputs, a number and an int.  
+It then converts the first number to base N, where N is the second argument.  
+Example: ```numberToBase(27, 3)``` returns ```1000```, because ```27``` in base 3 is ```1000```.
