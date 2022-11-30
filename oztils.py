@@ -67,8 +67,7 @@ def stripNot(remove,string):
 	return r
 def getFactors(n):
 	f=[1]
-	for _ in range(2,round(n)+2 if round(n)>n else round(n)+1): 
-		if n%_==0: f.append(_)
+	for _ in range(2,round(n)+2 if round(n)>n else round(n)+1):f.append(_) if n%_==0 else pass
 	return f+[n]
 def mustInput(s,w):
 	n=input(s)
