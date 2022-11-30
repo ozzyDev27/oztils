@@ -9,14 +9,16 @@ Example: ```nonIndexedRange(4)``` returns a list of ```[1,2,3,4]```
 The ```invert``` function takes a single input (anything) and returns what it is reversed.  
 Example: ```invert("Hello")``` would return ```"olleH"```, and ```invert(7431)``` would return ```1347```
 ### removeStart
-removeStart is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
-For example, removeStart("www.","www.ozzy.fun") would return "ozzy.fun".
+```removeStart``` is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.   
+It takes two arguments, both strings. The first is what you remove from the start, the second is the string.  
+Example: ```removeStart("www.","www.ozzy.fun")``` would return ```"ozzy.fun"```.
 ### removeEnd
-removeEnd is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.
-For example, removeEnd(".fun","www.ozzy.fun") would return "www.ozzy".
+```removeEnd``` is a universal version function, meaning that it will work in both Python 2.X and Python 3.X.  
+It takes two arguments, both strings. The first is what you remove from the end, the second is the string.  
+Example: ```removeEnd(".fun","www.ozzy.fun")``` would return ```"www.ozzy"```.
 ### isPalindrome
-isPalindrome takes one input and checks if it is a palindrome - or if it can be reversable and be the same thing!
-Example: isPalindrome("racecar") would return true, because "racecar" reversed is "racecar"
+The function ```isPalindrome``` takes one input and checks if it is a palindrome - or if it can be reversable and be the same thing!  
+Example: ```isPalindrome("racecar")``` would return ```True```, because ```"racecar"``` reversed is ```"racecar"```
 ### listToString
 listToString takes one input, a list. It then concatenates it into a single string!
 Example: listToString(["Hello","there"]) would return "Hellothere".
@@ -27,7 +29,7 @@ Example: slowprint("hello, world!", 5.3) would type "hello, world!" over the spa
 ### remove
 Instead of doing text.replace("~","") over and over again to remove the characters from a string you don't like, use remove!
 remove takes two arguments, text and toRemove - both strings. Every single character in toRemove gets removed from text!
-Example: remove("Hello, world! How are you doing today?", ",!?d") removes all commas, exclamation marks, question marks, and letter "d"'s from the string, returning "Hello worl How are you oing toay"
+Example: remove("Hello, world! How are you doing today?", ",!?d") removes all commas, exclamation marks, question marks, and d's from the string, returning "Hello worl How are you oing toay"
 ### fileAppend
 fileAppend takes two arguments, file, and toWrite. It proceeds to add the text "toWrite" to the end of the file.
 Example: fileAppend("hello.txt","Hello, world!") adds "Hello, world!" to the end of "hello.txt".
