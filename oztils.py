@@ -47,9 +47,7 @@ def simplify(a,b):
 	factsA.append(a)
 	factsA=factsA[::-1]
 	for _ in factsA:
-		if b/_==round(b/_):
-			facts.append(_)
-			break
+		if b/_==round(b/_):facts.append(_);break
 	return [int(a/facts[len(facts)-1]),int(b/facts[len(facts)-1])]
 def deleteAllOf(ls,target):
 	while target in ls:ls.pop(ls.index(target))
