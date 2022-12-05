@@ -129,3 +129,6 @@ Example: ```reciprocal(4)``` returns ```0.25``` because the reciprocal of ```4``
 The ```numberToBase``` function takes two inputs, a number and an int.  
 It then converts the first number to base N, where N is the second argument.  
 Example: ```numberToBase(27, 3)``` returns ```1000```, because ```27``` in base 3 is ```1000```.
+### clear
+The ```clear``` function clears everything in the terminal. It takes zero arguments.  
+Example: ```clear()``` would clear everything in the terminal.
