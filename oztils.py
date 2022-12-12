@@ -26,6 +26,7 @@ def percent(per):from random import randint;return randint(1,100)<=per
 def coinFlip():from random import randint;return randint(0,1)<1
 def formatNumber(n):return ",".join([str(round(n)-1 if round(n)>n else round(n))[::-1][i:i+3][::-1] for i in range(0, len(str(round(n)-1 if round(n)>n else round(n))), 3)][::-1])+"."+str(n).split(".",1)[1]
 def reciprocal(n):return 1/n
+def roundTo(n,roundTo):return round(n/roundTo)*roundTo
 def numberToBase(n, b):
     if n==0:return 0
     digits = []
