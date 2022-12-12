@@ -132,3 +132,8 @@ Example: ```numberToBase(27, 3)``` returns ```1000```, because ```27``` in base 
 ### clear
 The ```clear``` function clears everything in the terminal. It takes zero arguments.  
 Example: ```clear()``` would clear everything in the terminal.
+### roundTo
+```roundTo``` is a function that rounds a number to the nearest Nth.  
+It takes two inputs, two numbers. It then rounds the first number to the nearest second number.  
+For example: ```roundTo(3.1415,0.1)``` returns ```3.1```, because ```3.1415``` rounded to the nearest ```.1``` is ```3.1```.   
+Another example: ```roundTo(7.3,2)``` returns ```8```, because ```7.3``` rounded to the nearest ```2``` is ```8```.
