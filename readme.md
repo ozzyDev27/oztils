@@ -20,8 +20,11 @@ Example: ```removeEnd(".fun","www.ozzy.fun")``` would return ```"www.ozzy"```.
 The function ```isPalindrome``` takes one input and checks if it is a palindrome - or if it can be reversable and be the same thing!  
 Example: ```isPalindrome("racecar")``` would return ```True```, because ```"racecar"``` reversed is ```"racecar"```
 ### listToString
-```listToString``` takes one input, a list. It then concatenates it into a single string!  
-Example: ```listToString(["Hello","there"])``` returns ```"Hellothere"```
+```listToString``` takes one input, a list. It then turns every item within it to a string!  
+Example: ```listToString(["Hello",1])``` returns ```["Hello","1"]```
+### listToInt
+```listToInt``` takes one input, a list. It then turns every item within it to an int!  
+Example: ```listToInt(["2",1])``` returns ```[2,1]```
 ### slowprint
 The function ```slowprint``` is a function that takes two inputs, a string and a number.  
 It prints out the text over the span of how much time you inputted (in seconds).  
