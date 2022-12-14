@@ -3,7 +3,8 @@ def invert(arg):return eval(f"{str(type(arg))[8:-2]}(str(variableOfUnknownType)[
 def removeStart(start, strInp):return strInp[len(str(start)):] if strInp.startswith(str(start)) else strInp
 def removeEnd(end, strInp):return strInp[:-len(str(end))] if strInp.endswith(str(end)) else strInp
 def isPalindrome(check):return str(check)==str(check)[::-1]
-def listToString(listInp):return ''.join(listInp)
+def listToString(listInp):return [str(i) for i in listInp]
+def listToInt(listInp):return [int(i) for i in listInp]
 def isRound(num):return round(num)==num
 def factorial(n):return n * factorial(n-1) if n else 1
 def clamp(num,maxn,minn):sorted((minn, num, maxn))[1]
