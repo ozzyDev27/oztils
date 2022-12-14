@@ -137,3 +137,7 @@ Example: ```clear()``` would clear everything in the terminal.
 It takes two inputs, two numbers. It then rounds the first number to the nearest second number.  
 For example: ```roundTo(3.1415,0.1)``` returns ```3.1```, because ```3.1415``` rounded to the nearest ```.1``` is ```3.1```.   
 Another example: ```roundTo(7.3,2)``` returns ```8```, because ```7.3``` rounded to the nearest ```2``` is ```8```.
+### pythagorean
+```pythagorean``` is a function that is rather obvious.  
+It takes two inputs, both numbers, does the pythagorean theorem, then returns the output.  
+Example: ```pythagorean(2,5)``` would return ```5.38516480713```, because ```5.38516480713```=```sqrt(2^2+5^2)```
