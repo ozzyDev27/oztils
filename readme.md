@@ -144,3 +144,6 @@ Another example: ```roundTo(7.3,2)``` returns ```8```, because ```7.3``` rounded
 ```pythagorean``` is a function that is rather obvious.  
 It takes two inputs, both numbers, does the pythagorean theorem, then returns the output.  
 Example: ```pythagorean(2,5)``` would return ```5.38516480713```, because ```5.38516480713```=```sqrt(2^2+5^2)```
+### pi
+```pi``` is a function that is just that - pi.  
+Example: ```pi()``` returns ```3.1415926``` etc (1000 digits)
