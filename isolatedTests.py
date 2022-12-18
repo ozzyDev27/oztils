@@ -1,1 +1,1 @@
-print("Hello, world!")
+print(repr([27,"deez nuts"]))
