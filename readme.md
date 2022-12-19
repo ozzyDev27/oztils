@@ -143,3 +143,6 @@ Example: ```pythagorean(2,5)``` would return ```5.38516480713```, because ```5.3
 ### pi
 it does what it says  
 Example: ```pi()``` returns ```3.14159``` etc (1000 digits)
+### euler
+```euler``` is a function that returns Euler's number.  
+Example: ```euler()``` returns ```2.71828``` etc (~3000 digits)
