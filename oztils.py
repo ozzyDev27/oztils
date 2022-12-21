@@ -15,6 +15,7 @@ def fileDelete(file):from os import remove;remove(file)
 def fileRename(file,toRename):from os import rename;rename(file,toRename)
 def fileAppend(file,toWrite):localOpen = open(file, "a");localOpen.write(str(toWrite));localOpen.close()
 def fileErase(file):localOpen = open(file, "w");localOpen.write("");localOpen.close()
+def fileCreate(name):f=open(name,'x');f.close()
 def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
 def mean(numbers):return sum(numbers)/len(numbers)
 def sqrt(n):return n**.5
