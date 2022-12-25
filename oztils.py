@@ -20,7 +20,6 @@ def isUnique(l):return sorted(list(dict.fromkeys(l)))==sorted(l)
 def mean(numbers):return sum(numbers)/len(numbers)
 def sqrt(n):return n**.5
 def num(n):return int(n) if float(n).endswith(".0") else float(n)
-def xor(a,b):return (a or b) and (not a and b)
 def ceil(n):return round(n)+1 if round(n)<n else round(n)
 def floor(n):return round(n)+1 if round(n)>n else round(n)
 def isPrime(n):return 0 not in [n%i for i in range(2,n//2+1)]
