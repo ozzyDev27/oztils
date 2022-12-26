@@ -106,10 +106,6 @@ Example: ```mean([9,10,29])``` returns ```16```, because the mean of ```9, 10, 2
 ### num
 ```num``` is a function that converts the argument to either a float or an int, and will not add a ".0" or anything to the end.  
 Example: ```num("7")``` returns ```7```, whereas ```num(7.3)``` returns ```7.3```
-### xor
-```xor``` is a function that does exactly what the bitwise operation is.  
-It takes two arguments, both booleans. It then returns ```a xor b```.
-Example: ```xor(True, False)``` returns ```True``` because ```True xor False``` is ```True```.
 ### floor
 The ```floor``` function rounds any number down. It takes a single argument, a number.  
 Example: ```floor(17.561)``` returns ```17```
