@@ -142,3 +142,6 @@ Example: ```pi()``` returns ```3.14159``` etc (1000 digits)
 ### euler
 ```euler``` is a function that returns Euler's number.  
 Example: ```euler()``` returns ```2.71828``` etc (~3000 digits)
+### sqrt
+```sqrt``` is a function that takes a single input; a number. It then returns the, well, square root of the number.  
+Example: ```sqrt(9)``` returns ```3``` because the square root of ```9``` is ```3```.
