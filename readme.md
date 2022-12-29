@@ -145,3 +145,6 @@ Example: ```euler()``` returns ```2.71828``` etc (~3000 digits)
 ### sqrt
 ```sqrt``` is a function that takes a single input; a number. It then returns the, well, square root of the number.  
 Example: ```sqrt(9)``` returns ```3``` because the square root of ```9``` is ```3```.
+### root
+The ```root``` function takes two arguments - two numbers, ```n``` and ```i```. The function returns the ```i```th root of ```n```. (if ```i```=3 it would return cube root of ```n```)  
+Example: ```root(27, 3)``` would return ```3```, because the cube root of ```27``` is ```3```.
